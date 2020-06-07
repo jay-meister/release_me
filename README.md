@@ -21,3 +21,11 @@ export RELEASE_NODE=<%= @release.name %>@127.0.0.1
 - `_build/prod/rel/release_me/bin/release_me start` - starts ReleaseME application
 - `_build/prod/rel/release_me/bin/relase_me remote` - open new terminal window and connect to the running node remotely.
 - Then run: `Process.whereis(ReleaseMe.Server) |> Process.exit(:exit)`
+
+
+## Delete Gigalixir app:
+- gigalixir apps:destroy -a <app_name>
+- gigalixir pg:destroy --help
+- gigalixir pg -a <app_name>
+- gigalixir pg:destroy --database_id <db_id> -a <app_name>
+- gigalixir apps:destroy -a <app_name>
